@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Startup landing Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <!-- To align the text in the center of the page, we use Bootstrap layout containers
+            - One row, with multiple elements (in this case header and section) could be used instead of multiple columns
+            - "Text-center" is used to center the text and is a Bootstrap utlitiy -->
+
+            <!-- * Why use d-flex? -->
+            <!-- * Why use h-100? -->
+        <div class="container d-flex align-items-center h-100">
+            <div class="row">
+                <header class="text-center col-12">
+                    <h1 class="text-uppercase">The Biggest Startup Of The Year</h1>
+                </header>
+                <section class="text-center col-12">
+                    <hr>
+                    <!-- Landing page created using https://us5.admin.mailchimp.com/ -->
+                    <a href="https://mailchi.mp/f2b900e7c28a/startup-idea">
+                        <button type="button" class="btn btn-primary">Find out more</button>
+                    </a>
+                </section>
+                <!-- As many classes can be added to seperate different selectors if present -->
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!-- Bootstrap Utilities
+    Bootstrap has utilities which help us to modify the elements
+    Text Utility reference: https://getbootstrap.com/docs/5.1/utilities/text/ 
+-->
+
+<!-- * Why use d-flex?
+    d-flex a.k.a the flexbox in Bootstrap has to be used in this situation to align the contents of the container
+    As Bootstraps layout uses container, we can easily use flexbox to control the positioning
+    Reference: https://getbootstrap.com/docs/5.1/utilities/flex/ 
+-->
+
+<!-- * Why use h-100?
+    h-100 is used because the container has it's own height and width, which doesn't cover the whole page
+    For this reason, we give it a height of 100, so that the text could be centered/aligned vertically w.r.t the page
+-->
