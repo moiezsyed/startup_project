@@ -10,12 +10,6 @@ body, html {
     background-size: cover;
 }
 
-hr {
-    border-color: tomato;
-    border-width: 5px;
-    max-width: 65px;
-}
-
 .btn {
     /* Border color was added because without it we have default color on the border; property of Bootstrap */
     background-color: tomato;
